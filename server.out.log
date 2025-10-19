@@ -1,0 +1,8 @@
+{"level":30,"time":"2025-10-12T19:14:14.355Z","pid":37320,"hostname":"DESKTOP-2RHF69J","msg":"hello elastic world"}
+{"level":30,"time":"2025-10-12T19:14:14.356Z","pid":37320,"hostname":"DESKTOP-2RHF69J","msg":"This is some great stuff"}
+{"level":30,"time":"2025-10-12T19:14:14.356Z","pid":37320,"hostname":"DESKTOP-2RHF69J","msg":"Some more entries for our logging"}
+{"level":30,"time":"2025-10-12T19:14:14.367Z","pid":37320,"hostname":"DESKTOP-2RHF69J","msg":"app listening on port 3000!"}
+{"level":30,"time":"2025-10-18T18:47:16.416Z","pid":1692,"hostname":"DESKTOP-2RHF69J","msg":"hello elastic world"}
+{"level":30,"time":"2025-10-18T18:47:16.417Z","pid":1692,"hostname":"DESKTOP-2RHF69J","msg":"This is some great stuff"}
+{"level":30,"time":"2025-10-18T18:47:16.417Z","pid":1692,"hostname":"DESKTOP-2RHF69J","msg":"Some more entries for our logging"}
+{"level":30,"time":"2025-10-18T18:47:16.425Z","pid":1692,"hostname":"DESKTOP-2RHF69J","msg":"app listening on port 3000!"}
