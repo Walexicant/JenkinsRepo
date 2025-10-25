@@ -1,14 +1,14 @@
 pipeline {
   agent any
   parameters {
-    string(name: 'TARGET_IP', defaultValue: '172.212.218.66', description: 'Target VM IP or hostname')
+    string(name: 'TARGET_IP', defaultValue: '192.168.1.146', description: 'Target VM IP or hostname')
     booleanParam(name: 'STOP_APP', defaultValue: false, description: 'If true, stop the remote app after run')
   }
   stages {
     stage('Deploy to VM') {
       steps {
         script {
-          def remote = "azureuser@${params.TARGET_IP}"
+          def remote = "walexicant1@${params.TARGET_IP}"
           def remoteDir = "/opt/node-app"
           withCredentials([sshUserPrivateKey(credentialsId: 'deploy-to-vm', keyFileVariable: 'SSH_KEY')]) {
             // compute stop flag here to avoid interpolating credentials
