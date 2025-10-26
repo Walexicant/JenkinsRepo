@@ -86,6 +86,10 @@ app.get('/jenkins', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+app.get('/', (req, res) => {
+  res.send('Welcome to the Node.js Jenkins App! 🚀 Go to /api/info for details.');
+});
+
 app.listen(PORT, function () {
     logger.info(`app listening on port ${PORT}!`);
 });
