@@ -7,9 +7,9 @@ on:
 
 env:
   IMAGE_NAME: nodejs-jenkins
-  IMAGE_TAG: ${{ github.sha }}
+  IMAGE_TAG: latest
   IMAGE_REPO: ${{ secrets.DOCKERHUB_USERNAME }}
-  IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-jenkins:${{ github.sha }}
+  IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-jenkins:latest
 
 jobs:
   build-and-push:
@@ -48,7 +48,7 @@ jobs:
       - name: Deploy via SSH to Local VM
         uses: appleboy/ssh-action@v0.1.8
         with:
-          host: ${{ secrets.LOCAL_VM_IP }}         # e.g. 192.168.1.146
+          host: ${{ secrets.LOCAL_VM_IP }}         # e.g. 192.168.0.146
           username: ${{ secrets.LOCAL_VM_USER }}    # e.g. walexicant1
           key: ${{ secrets.LOCAL_VM_SSH_KEY }}      # private key for your VM
           port: 22
