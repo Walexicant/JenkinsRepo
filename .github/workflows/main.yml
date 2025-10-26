@@ -41,7 +41,7 @@ jobs:
 
   deploy:
     name: Deploy to Local VM (VirtualBox)
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build-and-push
 
     steps:
